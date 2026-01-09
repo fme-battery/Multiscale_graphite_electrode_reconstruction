@@ -4,6 +4,7 @@ Repository uses Git large file storage (LFS) module, cloning repository without 
   1) Download and install Git https://git-scm.com/ and Git LFS module https://git-lfs.com/
   2) Open Git Bash and type "git lfs install" in the terminal to initialize LFS module
   3) Clone the repository with following command in Git Bash terminal "git clone **repository-url** <**Local/directory/path**>" will clone repsository to sepcified local folder
+
      Example: Git clone  https://github.com/BatteryCoast/Graphite_reconstruction_using_CAD_particle.git "C:\folder"
 
 # GraphiteReconstruct
