@@ -2,16 +2,16 @@
 
 Repository uses Git large file storage (LFS) module, cloning repository without Git LFS module will lead to large nessesary files being replaced with pointers which cannot be used in executables.
   1) Download and install Git https://git-scm.com/ and Git LFS module https://git-lfs.com/
-  2) Open Git Bash and type "git lfs install" in the terminal to initialize LFS module
-  3) Clone the repository with following command in Git Bash terminal "git clone **repository-url** <**Local/directory/path**>" will clone repsository to sepcified local folder
+  2) Open Git Bash and type "git lfs install" in the terminal to initialize LFS module.
+  3) Clone the repository with following command in Git Bash terminal "git clone **repository-url** <**Local/directory/path**>" will clone repsository to sepcified folder on device or cloud. 
 
-     Example: Git clone  https://github.com/BatteryCoast/Graphite_reconstruction_using_CAD_particle.git "C:\folder"
+     Example: Git clone  https://github.com/BatteryCoast/Multi-scale_electrode_reconstruction.git "C:\folder"
 
-# GraphiteReconstruct
-Graphite reconstruction toolbox is made by Weijia Gong mail:(weijiag@student.uia.no)
-project supervisor Williams A. Appiah mail: (williams.a.appiah@uia.no)
+# Electrode reconstruction
+Electrode reconstruction toolbox is made by Weijia Gong mail:(weijiag@student.uia.no)
+Project supervisor: Williams A. Appiah mail: (williams.a.appiah@uia.no)
 
-This repository describes an approach of graphite reconstruction through graphite particles made in 3D modeling software. The particle was created in 3D modelling software and exported as an engineering file (e.g., an STL file), containing the particle's surface mesh. The surface mesh was solidified by the Python scripts. To reconstruct the graphite electrode in MATLAB, the solid mesh file was converted to a 3D image matrix (nii file) with proper dimensions. The particles filled out the electrode dimension with a size distribution factor. To achieve the active materials fraction, particles that were cut in half were filled into the boundary of the electrode. The carbon binder domains, as the mixture of carbon black and binder, were distributed around the graphite particle. The separator was added in the mesh formation process, and the graphite cell mesh was exported as the bdf file that can be used later in COMSOL Multiphysics.
+This repository describes an approach of multi-scale electrode reconstruction through electrode particles made in 3D modeling software. The particle was created in 3D modelling software and exported as an engineering file (e.g., an STL file), containing the particle's surface mesh. The surface mesh was solidified by the Python scripts. To reconstruct the electrode in MATLAB, the solid mesh file was converted to a 3D image matrix (.nii file) with proper dimensions. The particles filled out the electrode dimension with a size distribution factor. To achieve the active materials fraction, particles that were cut in half were filled into the boundary of the electrode. The carbon binder domains, as the mixture of carbon black and binder, were distributed around the graphite particle. The separator was added in the mesh formation process, and the graphite cell mesh was exported as the .bdf file that can be used later in COMSOL Multiphysics.
 
 The approach is composed of 3 parts: 1. Particles to matrix. 2. Electrode reconstruction. and 3. Cell mesh formation.
 The workflow is as follows: 
