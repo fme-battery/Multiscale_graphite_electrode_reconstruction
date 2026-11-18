@@ -47,5 +47,7 @@ The discharging process simulation was conducted in 1C, 3C, and 5C.
 ## Notes: 
 1. If you are using an electrode with a different thickness, you have to modify in Definitions/Selections/"Box Li Foil" the parameter "z minimum" accordingly. Here the thickness of the separator is 6 µm. 
 2. If you encounter a "self-intersecting face" error when importing a mesh, right-click on "Mesh", select Intersections and Partitions/"Detect Faces", add the ID of the faces self intersecting based on the error message, and put Maximum_neighbor_angle = 20°
+## Link to original Battery Coast repository
+https://github.com/BatteryCoast/Multiscale_graphite_electrode_reconstruction.git
 
 This approach is developed based on the MATLAB code and COMSOL script done by Dr. Mehdi Chouchane and iso2mesh.
